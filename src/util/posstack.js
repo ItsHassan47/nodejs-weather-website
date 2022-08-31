@@ -1,3 +1,5 @@
+'use strict';
+
 const request = require('postman-request');
 
 const posStack = (address, callback) => {

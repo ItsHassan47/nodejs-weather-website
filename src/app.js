@@ -1,3 +1,5 @@
+'use strict';
+
 const path = require('path');   // node module for directory path
 const express = require('express');
 const hbs = require('hbs'); // template engine to render dynamic pages, handle bars (hbs)

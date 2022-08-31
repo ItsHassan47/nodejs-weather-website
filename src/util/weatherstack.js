@@ -1,3 +1,5 @@
+'use strict';
+
 const request = require('postman-request'); // to retrive data from api
 
 const wheatherStack = (longitude, latitude, callback) => {
