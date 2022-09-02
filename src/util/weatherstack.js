@@ -11,10 +11,8 @@ const wheatherStack = (longitude, latitude, callback) => {
             callback('Unable to connect to wheather service', undefined)
         } else if (body.error) {
             callback('Unable to find location', undefined)
-        } else {
-            console.log(body);
+        } else {            
             const data = body.current;
-
             callback(`${data.weather_descriptions[0]}. It is currently ${data.temperature} degrees outside. It feels like ${data.feelslike}. The humidity is ${data.humidity}%. There is a ${data.precip}% chance of rain.`);
         }
     });
